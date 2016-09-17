@@ -1,0 +1,51 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#e74c3c</item>
+        <item name="colorPrimaryDark">#c0392b</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowContentTransitions">true</item>
+    </style>
+
+    <style name="loginTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#e74c3c</item>
+        <item name="colorPrimaryDark">#000000</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowContentTransitions">true</item>
+    </style>
+
+    <style name="FrontPageActivity" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#EDE7F6</item>
+        <item name="colorPrimaryDark">#000000</item>
+        <item name="colorAccent">#9575CD</item>
+        <item name="android:windowContentTransitions">true</item>
+    </style>
+
+
+    <style name="AppTheme2" parent="Theme.AppCompat.Light.NoActionBar">
+    <!-- Customize your theme here. -->
+    <item name="colorPrimary">#e74c3c</item>
+    <item name="colorPrimaryDark">#c0392b</item>
+    <item name="colorAccent">@color/colorAccent</item>
+    <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentTransitions">true</item>
+    </style>
+
+    <style name="customLoginButton" parent="Theme.AppCompat.Light">
+        <item name="android:colorControlNormal">#D1C4E9</item>
+        <item name="colorControlHighlight">#9575CD</item>
+        <item name="android:windowContentTransitions">true</item>
+    </style>
+
+    <style name="AppTheme.Dark.Dialog" parent="Theme.AppCompat.Dialog">
+        <item name="colorAccent">#4527A0</item>
+        <item name="android:textColorPrimary">#4527A0</item>
+        <item name="android:textColor">#4527A0</item>
+        <item name="android:background">#9E9E9E</item>
+    </style>
+
+</resources>

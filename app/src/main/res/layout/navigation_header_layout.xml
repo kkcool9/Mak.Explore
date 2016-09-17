@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="170dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bgimg1"
+    android:orientation="vertical">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="76dp"
+        android:layout_height="76dp"
+        android:id="@+id/view"
+        android:layout_marginLeft="5dp"
+        android:src="@drawable/avatar_empty"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#FFF"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kranthi Kumar Polisetty"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"
+        android:textSize="14sp"
+        android:textColor="#FFF"
+        android:id="@+id/kkname"
+        android:layout_below="@+id/view"
+        android:layout_alignStart="@+id/view" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="kpoliset@syr.edu"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:textColor="#FFF"
+        android:id="@+id/mid"
+        android:layout_below="@+id/kkname"
+        android:layout_alignStart="@+id/kkname" />
+
+</RelativeLayout>

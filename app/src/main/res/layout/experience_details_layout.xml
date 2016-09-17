@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:id="@+id/expDImg"
+        android:scaleType="centerCrop"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Trip to NYC"
+        android:textColor="#FFF"
+        android:textSize="18sp"
+        android:id="@+id/expDTitle"
+        android:background="@drawable/upcomingevent_text_background"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="0dp"
+        android:layout_alignBottom="@+id/expDImg"
+        android:layout_alignParentStart="true" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="9dp"
+        android:background="@drawable/detailsview_detail_background"
+        android:layout_below="@id/expDImg"
+        android:id="@+id/relativeLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:id="@+id/expDDesc"
+
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start location"
+            android:id="@+id/expSLocation"
+            android:layout_alignTop="@+id/textView4"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="End location"
+            android:id="@+id/expELocation"
+            android:layout_below="@+id/expSLocation"
+            android:layout_alignStart="@+id/expSLocation" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add to my experiences"
+            android:id="@+id/expRegister"
+            android:textColor="#673AB7"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:theme="@style/customLoginButton" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start Location"
+            android:id="@+id/textView4"
+            android:layout_below="@+id/expDDesc"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="30dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="End Location"
+            android:id="@+id/textView5"
+            android:textStyle="bold"
+            android:layout_below="@+id/textView4"
+            android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/expDrating"
+        style="?android:ratingBarStyleSmall"
+        android:layout_marginLeft="18dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$40"
+        android:textSize="20sp"
+        android:textColor="#EDE7F6"
+        android:textStyle="bold"
+        android:background="@drawable/detailsview_detail_background"
+        android:padding="3dp"
+        android:id="@+id/expDAmount"
+        android:layout_marginTop="24dp"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/textView7" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#EDE7F6"
+        android:text="$"
+        android:textSize="18sp"
+        android:background="@drawable/detailsview_detail_background"
+        android:id="@+id/textView7"
+        android:layout_alignTop="@+id/expDAmount"
+        android:layout_alignStart="@+id/expDTitle" />
+
+
+</RelativeLayout>

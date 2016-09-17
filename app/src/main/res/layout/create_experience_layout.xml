@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="#E8EAF6"
+    android:id="@+id/createExperienceLayout"
+    android:fillViewport="true">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
+        <EditText
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Experience Title"
+            android:textColorHint="#673AB7"
+            android:id="@+id/eTitle"/>
+
+        <EditText
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Start Location"
+            android:textColorHint="#673AB7"
+            android:id="@+id/elocation"
+            android:inputType="textMultiLine|textPostalAddress" />
+        <EditText
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#673AB7"
+            android:hint="End Location"
+            android:id="@+id/endlocation"
+            android:inputType="textMultiLine|textPostalAddress" />
+        <EditText
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#673AB7"
+            android:hint="mm\dd\yyyy"
+            android:id="@+id/edate"
+            android:inputType="date" />
+        <EditText
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#673AB7"
+            android:hint="Time"
+            android:id="@+id/etime"
+            android:inputType="time" />
+        <EditText
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Number of available slots"
+            android:textColorHint="#673AB7"
+            android:id="@+id/eslots"
+            android:inputType="number" />
+
+        <EditText
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#673AB7"
+            android:hint="$"
+            android:id="@+id/edollar"
+            android:inputType="number" />
+
+        <EditText
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Description"
+            android:textColorHint="#673AB7"
+            android:id="@+id/edescription"
+            android:inputType="textMultiLine" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:textColorHint="#673AB7"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_weight="0.5"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/btn_statelist"
+                android:src="@drawable/ic_picture"
+                android:id="@+id/ebrowse" />
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+               android:background="@drawable/btn_statelist"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/ic_menu_camera"
+                android:layout_weight="0.5"
+                android:id="@+id/ecamera" />
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </RelativeLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="#D1C4E9"
+            android:textColor="#673AB7"
+            android:id="@+id/ecreate"
+            android:text="Create Experience"/>
+
+
+    </LinearLayout>
+</ScrollView>
+

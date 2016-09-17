@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<group android:checkableBehavior="single"
+    android:id="@+id/mainMenus">
+    <item android:id="@+id/createExperience"
+        android:checked="false"
+
+        android:title="Create Experience"></item>
+    </group>
+    <group android:checkableBehavior="single"
+        android:id="@+id/pN">
+    <item android:id="@+id/placesNearby"
+        android:checked="false"
+
+        android:title="Places Nearby"></item>
+        </group>
+    <group android:checkableBehavior="single"
+        android:id="@+id/act">
+    <item android:id="@+id/activities"
+        android:checked="false"
+
+        android:title="Activities"></item>
+</group>
+    <group android:checkableBehavior="single"
+        android:id="@+id/optionalMenu">
+        <item android:id="@+id/myProfile"
+            android:checked="false"
+
+            android:title="My Account"></item>
+    </group>
+
+</menu>

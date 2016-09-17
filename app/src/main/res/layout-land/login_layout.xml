@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/loginFrag"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+
+    android:layout_width="match_parent">
+    xmlns:android="http://schemas.android.com/apk/res/android" />
+<LinearLayout  xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:background="#e74c3c"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerVertical="true"
+    android:layout_alignParentStart="true">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/title"
+        android:layout_weight="0.4"
+        android:layout_alignParentStart="true"
+        android:id="@+id/titleImg"
+        android:layout_above="@+id/loginLinearLayout"
+        android:layout_marginBottom="34dp"
+        android:layout_alignEnd="@+id/loginLinearLayout"
+        android:layout_alignStart="@+id/loginLinearLayout"
+        android:layout_gravity="center_vertical" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/loginrect"
+        android:layout_weight="0.6"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/loginLinearLayout"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+        android:orientation="vertical"
+        android:layout_above="@+id/imageView3">
+
+        <com.github.florent37.materialtextfield.MaterialTextField
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:mtf_image="@drawable/ic_email_black_12dp"
+            >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:id="@+id/userEmail"
+            android:textSize="12dp"
+            android:textColor="#444"
+            android:textColorHint="#666"
+
+
+            android:hint="Email"
+            android:layout_alignBottom="@+id/userPassCode"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+</com.github.florent37.materialtextfield.MaterialTextField>
+
+        <com.github.florent37.materialtextfield.MaterialTextField
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:mtf_image="@drawable/key">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:textSize="12dp"
+            android:textColor="#444"
+            android:textColorHint="#666"
+            android:id="@+id/userPassCode"
+            android:hint="Password"
+            android:layout_below="@+id/apptag"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+        </com.github.florent37.materialtextfield.MaterialTextField>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:id="@+id/loginButton"
+        android:layout_below="@+id/userPassCode"
+        android:layout_alignParentLeft="true"
+        style="@style/Widget.AppCompat.Button.Borderless"
+
+        android:theme="@style/customLoginButton"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/login_button"
+        android:layout_toStartOf="@+id/login_button" />
+
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/login_button"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/loginButton"
+        android:layout_alignLeft="@+id/appTitle"
+        android:layout_alignStart="@+id/appTitle"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:text="Login" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Register with us"
+            android:id="@+id/createUserButton"
+            android:layout_above="@+id/appFooter" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baselineimage"
+        android:id="@+id/imageView3"
+android:layout_marginBottom="-10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
+    </ScrollView>

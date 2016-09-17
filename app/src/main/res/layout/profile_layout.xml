@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#EDE7F6"
+    android:id="@+id/profileLayout"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/profileico"
+        android:layout_width="96dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/profilePicture"
+        android:layout_height="96dp"
+        android:padding="15dp"
+
+        app:civ_border_width="2dp"
+        app:civ_border_color="#FFFFFFFF"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kranthi Kumar Polisetty"
+        android:id="@+id/profileName"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        android:textColor="#2c3e50"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/profilePicture"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3153809206"
+        android:id="@+id/profileNumber"
+        android:layout_below="@+id/profileName"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Experiences Hosted"
+        android:layout_marginLeft="30dp"
+        android:id="@+id/expHosted"
+        android:layout_marginTop="39dp"
+        android:layout_below="@+id/profileNumber"
+        android:layout_toEndOf="@+id/textView3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Experiences Attended"
+        android:id="@+id/expAttented"
+        android:layout_below="@+id/expHosted"
+        android:layout_alignStart="@+id/expHosted" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Experiences Hosted"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/textView3"
+        android:layout_above="@+id/expAttented"
+        android:layout_alignParentStart="true"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Experiences Interested"
+        android:id="@+id/textView6"
+        android:layout_below="@+id/textView3"
+        android:layout_alignStart="@+id/textView3"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imgfromRight"
+        android:src="@drawable/background_fill_final"
+        android:layout_marginTop="18dp"
+        android:layout_below="@+id/expAttented"
+        android:layout_alignStart="@+id/profilePicture" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imgfromleft"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/background_fill_final"
+        android:layout_below="@+id/profileNumber"
+        android:layout_alignEnd="@+id/profilePicture" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/imageView2"
+        android:src="@drawable/purplebutterflyth"
+        android:layout_marginBottom="58dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/profileName" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/imageView4"
+        android:src="@drawable/purplebutterflyth"
+        android:layout_above="@+id/imageView2"
+        android:layout_toEndOf="@+id/imageView2" />
+
+</RelativeLayout>
